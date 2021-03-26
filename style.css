@@ -1,27 +1,43 @@
+* {
+  text-decoration: none;
+}
+
 html {
   font-family: Times New Roman;
   font-size: 16px;
   margin: auto;
+  padding: 0;
   background-color: #546BAB;
-  color: seashell
+  color: seashell;
+  width: 100%;
+  height: 100%;
 }
 
 p {
-  text-align: justify
+  text-align: justify;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.skillset {
+  color: #fff;
 }
 
 body {
-  margin: 0
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 main {
   position: relative;
   margin: 50px;
-  top: 70px
+  top: 70px;
 }
 
 header {
-  display: flex;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -29,36 +45,92 @@ header {
   height: 50px;
   background-color: #fff;
   border-bottom: 3px solid #000;
-  align-items: center; /*align-items center made logo and nav bar be in the center of the header in the cross axis*/
-  justify-content: space-between; /*justify-content space-between is what made the nav bar go to the right*/
-  text-align: right
-}
-
-nav ul {
+  list-style: none;
   margin: 0;
-  padding-right: 10px;
-  text-align: right;
+  padding: 0;
+  line-height: 0px;
+}
+nav {
+  list-style: none;
+}
+nav #menubar {
+  float: right;
+  margin: 25px 0;
+  padding: 0;
+  transition: all 0.5 linear;
 }
 
 nav li {
   color: #000;
-  font-size: 22px;
-  font-weight: 500px;
+  font-size: 20px;
+  font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  margin: 10px auto;
-  padding-right: 15px;
-
+  margin: auto 10px;
+  text-transform: uppercase;
 }
+
+nav #icon{
+  color: #000;
+  font-size: 25px;
+  float: right;
+  margin: 12.5px 25px 0 0 ; /*because header height is 50px, icon height is 25px, so top and bottom should be 12.5px each to be in the middle.*/
+  cursor: pointer;
+  display: none;
+}
+
+nav #close {
+  color: #B52522;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  nav #icon {
+    display: block;
+  }
+
+  nav #menubar {
+    background-color: #CDE7FF;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 0;
+    left: -100%; 
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+  }
+  nav #close {
+    display: block;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    transition: all 0.5s;
+  }
+}
+
+.my-profile {
+  height: 100vh;
+  /* width: 100%; */
+  margin: auto;
+}
+
 .img-container{
   position: relative;
-  left: 37%;
+  margin: auto;
   height: 300px;
   width: 300px;
   border-radius: 500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   border: 5px solid #000;
   overflow: hidden;
 }
@@ -88,9 +160,6 @@ section.intro p{
   font-size: 22px
 }
 
-.heading p {
-  font-size: 100px
-}
 
 h1 {
   background-color: #fff;

@@ -4,17 +4,25 @@
     <meta charset="utf-8">
     <title>Nanda Wang</title>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad32d37637.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
-          <a href="#home"><li>Home</li></a>
-          <a href="#background"><li>About Me</li></a>
-          <a href="#projects"><li>Projects</li></a>
-          <a href="#contact"><li>Contact</li></a>
+        <ul id="menubar">
+          <a href="#home" id="homeButton"><li>Home</li></a>
+          <a href="#background" id="backgroundButton"><li>About Me</li></a>
+          <a href="#projects" id="projectsButton"><li>Projects</li></a>
+          <a href="#contact" id="contactButton"><li>Contact</li></a>
         </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label id="close">
+          <i class="fas fa-times-circle"></i>
+        </label>
+
       </nav>
     </header>
     <main>
@@ -33,7 +41,7 @@
 
       <div class="background" id="background">
         <h1>About Me</h1>
-        <h2><u>My Background & Motivation</h2></u>
+        <h2>My Background & Motivation</h2>
         <p>I graduated with a degree in Biomedical Engineering.</p>
         <p>BUT. In university, I absolutely hated programming when I first learnt it.
           I had to take a pre-requisite module on C, and I found it extremely confusing and complicated, and I totally couldn't see where I was going with it.</p>
@@ -45,7 +53,7 @@
         <p>After university, I took a long time to ponder on what I want to dedicate my life to as a career. After several twists and turns, here I am! I am now learning, relearning and honing my programming skills.</p>
 
 
-        <h2><u>Fun Facts!</u></h2>
+        <h2>Fun Facts!</h2>
         <p>Usually people can't tell where I'm from by looking at my name, because honestly it has flavours from different cultures. Can you guess where I'm from? Drop me a message to tell me!</p>
         <p>Beside programming and science, I love spending my time cooking and baking different dishes and bakes!</p>
         <br>
@@ -59,11 +67,12 @@
 
       <div class="skills">
         <h1>Skills</h1>
-        <ul>
+        <ul class="skillset">
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
           <li>Python</li>
+          <li>Git & Github</li>
         </ul>
         <p>And more to come!</p>
 
