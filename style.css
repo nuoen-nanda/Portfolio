@@ -18,6 +18,11 @@ p {
   max-width: 100%;
 }
 
+h1 {
+  background-color: #fff;
+  color: #000
+}
+
 h2 {
   text-decoration: underline;
 }
@@ -190,12 +195,6 @@ img.img-after {
 section.intro p{
   text-align: center;
   font-size: 22px
-}
-
-
-h1 {
-  background-color: #fff;
-  color: #000
 }
 
 .turning-point {
