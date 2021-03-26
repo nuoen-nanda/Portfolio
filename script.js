@@ -8,7 +8,7 @@ let contact = document.getElementById("contactButton");
 
 
 let menuAppear = function() {
-  menubar.style.left = '0%';
+  menubar.style.left = '0';
   close.style.right = '15px';
 }
 hamburgermenu.onclick = menuAppear;
