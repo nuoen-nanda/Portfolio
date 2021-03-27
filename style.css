@@ -102,7 +102,7 @@ nav #close:hover {
   color: #FF5436;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   nav #icon {
     display: block;
   }
@@ -156,6 +156,7 @@ nav #close:hover {
 img {
   min-width: 100%;
   min-height: 100%;
+  border-radius: 500px;
   transition: all 1s ease-out;
 }
 

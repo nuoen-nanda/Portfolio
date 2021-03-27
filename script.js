@@ -1,5 +1,5 @@
-let menubar = document.getElementById("menubar");
-let hamburgermenu = document.getElementById("icon");
+let menuBar = document.getElementById("menubar");
+let hamburgerMenu = document.getElementById("icon");
 let close = document.getElementById("close");
 let home = document.getElementById("homeButton");
 let background = document.getElementById("backgroundButton");
@@ -8,16 +8,17 @@ let contact = document.getElementById("contactButton");
 
 
 let menuAppear = function() {
-  menubar.style.left = '0';
+  menuBar.style.left = '0';
   close.style.right = '15px';
 }
-hamburgermenu.onclick = menuAppear;
+hamburgerMenu.onclick = menuAppear;
 
 let menuDisappear = function() {
-  menubar.style.left = '-100%';
+  menuBar.style.left = '-100%';
   close.style.right = '-100%';
 }
 close.onclick = menuDisappear;
+hamburgerMenu.ondblclick = menuDisappear;
 
 home.onclick = menuDisappear;
 background.onclick = menuDisappear;
